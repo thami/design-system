@@ -1,26 +1,48 @@
-# @thami/design-system
+# @thamimagi/design-system
 
-Shared design system with Storybook, TailwindCSS v4, and DaisyUI v5.
+A composable, multi-framework design system built for true front-end interoperability.
+
+## Vision
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    @thamimagi/design-system                  │
+│         (Framework-agnostic: React + Vue + Svelte)          │
+├─────────────────────────────────────────────────────────────┤
+│  Astro Blog          │  Directus CMS        │  Future Apps  │
+│  (React islands)     │  (Vue extensions)    │  (Any FW)     │
+│                      │                      │               │
+│  ← Module Federation / Shared Components →                  │
+└─────────────────────────────────────────────────────────────┘
+```
+
+This design system enables **true composable architecture** across:
+
+- **Astro** - Static sites with interactive React/Vue/Svelte islands
+- **Directus** - Vue-based CMS with custom interfaces and modules
+- **Any framework** - DaisyUI's CSS foundation works everywhere
+
+By sharing components via Module Federation and maintaining framework parity, we achieve consistent UX across the entire stack without style duplication.
 
 ## Features
 
 - 🎨 **TailwindCSS v4** - Utility-first CSS framework
-- 🌼 **DaisyUI v5** - Component classes for Tailwind
+- 🌼 **DaisyUI v5** - Framework-agnostic component classes
 - 📖 **Storybook 8** - Component documentation and playground
-- ⚛️ **React 19** - Component library
-- 📦 **NPM Package** - Published as `@thami/design-system`
+- ⚛️ **React 19** - Primary component library (Vue/Svelte planned)
+- 📦 **NPM Package** - Published as `@thamimagi/design-system`
 
 ## Installation
 
 ```bash
-pnpm add @thami/design-system
+pnpm add @thamimagi/design-system
 ```
 
 ## Usage
 
 ```tsx
-import { Button, Card } from "@thami/design-system";
-import "@thami/design-system/styles";
+import { Button, Card } from "@thamimagi/design-system";
+import "@thamimagi/design-system/styles";
 
 function App() {
   return (
@@ -59,6 +81,16 @@ DaisyUI card with support for images, actions, and variants.
 ## Themes
 
 Built-in DaisyUI themes: light (default), dark, cupcake, forest.
+
+Custom theme (Astrofy-inspired) planned.
+
+## Roadmap
+
+- [ ] Vue component variants (for Directus extensions)
+- [ ] Svelte component variants (for Astro islands)
+- [ ] Custom DaisyUI theme (dark base, cyan-blue primary)
+- [ ] Module Federation configuration
+- [ ] Web Components wrapper (true framework-agnostic)
 
 ## License
 
