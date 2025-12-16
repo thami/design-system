@@ -1,6 +1,6 @@
 {
   "name": "@thamimagi/design-system",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shared design system with Storybook, TailwindCSS v4, and DaisyUI v5",
   "type": "module",
   "main": "dist/index.js",
