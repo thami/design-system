@@ -1,5 +1,5 @@
 {
-  "name": "@thami/design-system",
+  "name": "@thamimagi/design-system",
   "version": "0.1.0",
   "description": "Shared design system with Storybook, TailwindCSS v4, and DaisyUI v5",
   "type": "module",
