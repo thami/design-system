@@ -1,0 +1,60 @@
+{
+  "name": "@thami/design-system",
+  "version": "0.1.0",
+  "description": "Shared design system with Storybook, TailwindCSS v4, and DaisyUI v5",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "tsc && vite build",
+    "build-storybook": "storybook build",
+    "lint": "eslint src",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "design-system",
+    "storybook",
+    "tailwindcss",
+    "daisyui",
+    "react",
+    "components"
+  ],
+  "author": "thami",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thami/design-system.git"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "packageManager": "pnpm@10.26.0",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "daisyui": "^5.5.14",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "storybook": "^8.6.14",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  }
+}
