@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "Bash(pnpm:*)",
+      "Bash(npm:*)",
+      "Bash(git:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:daisyui.com)",
+      "WebFetch(domain:tailwindcss.com)",
+      "WebFetch(domain:storybook.js.org)"
+    ],
+    "deny": []
+  }
+}
